@@ -3,8 +3,10 @@
 }
 
 .App {
-  padding: calc(var(--paddingBase) * 5);
-  height: 100vh;
+  --padding: calc(var(--paddingBase) * 5);
+
+  padding: var(--padding);
+  height: calc(100vh - var(--padding));
   display: flex;
   flex-direction: column-reverse;
 }
@@ -30,23 +32,16 @@
   border-bottom-right-radius: 0;
   text-decoration: none;
 }
-.bubble-answer:hover,
-.bubble-answer:focus {
-  /* A11y!!! */
-  outline: 2px solid orangered;
-}
 
 /* Blocks */
-article {
-}
 .question:not(:last-of-type) {
   padding-bottom: calc(var(--paddingBase) * 4);
   border-bottom: 1px solid #ddd;
 }
 .answer {
   text-align: center;
+  margin-bottom: calc(var(--paddingBase) * 3);
 }
-
 .hidden {
   display: none;
   border-bottom: 0 none;
