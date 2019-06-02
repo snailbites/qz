@@ -106,13 +106,14 @@ export class Quiz extends React.Component<QuizProps, QuizState> {
     this.startTimer();
   };
 
-  public reset = () => {
-    this.currStep = 1;
-    this.setState({
-      completed: false,
-      status: { right: 0, wrong: 0 }
-    });
-  };
+  // Put back if you want okay
+  // public reset = () => {
+  //   this.currStep = 1;
+  //   this.setState({
+  //     completed: false,
+  //     status: { right: 0, wrong: 0 }
+  //   });
+  // };
 
   render() {
     const { completed, status, questions } = this.state;
