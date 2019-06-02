@@ -12,7 +12,7 @@
 /* Bubbles */
 .bubble {
   display: inline-block;
-  padding: calc(var(--paddingBase) * 3) calc(var(--paddingBase) * 4);
+  padding: calc(var(--paddingBase) * 2) calc(var(--paddingBase) * 3);
 
   background-color: #cacaca;
   border-radius: 20px;
@@ -45,4 +45,9 @@ article {
 }
 .answer {
   text-align: center;
+}
+
+.hidden {
+  display: none;
+  border-bottom: 0 none;
 }
